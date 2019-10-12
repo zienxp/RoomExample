@@ -7,13 +7,13 @@
     tools:context=".HomeFragment">
 
     <Button
-        android:id="@+id/button_add_contact"
+        android:id="@+id/button_add_user"
         android:layout_width="226dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="8dp"
-        android:text="ADD CONTACT"
+        android:text="ADD USER"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,44 +21,46 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_view_contact"
+        android:id="@+id/button_view_users"
         android:layout_width="226dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:text="VIEW CONTACT"
+        android:text="VIEW Users"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_add_contact" />
+        app:layout_constraintTop_toBottomOf="@+id/button_add_user" />
 
     <Button
-        android:id="@+id/button_update_contact"
+        android:id="@+id/button_delete_user"
         android:layout_width="226dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:text="UPDATE CONTACT"
+        android:text="DELETE USER"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_view_contact" />
+        app:layout_constraintTop_toBottomOf="@+id/button_view_users" />
 
     <Button
-        android:id="@+id/button_delete_contact"
+        android:id="@+id/button_update_user"
         android:layout_width="226dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:text="DELETE CONTACT"
+        android:text="UPDATE USER"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_update_contact" />
+        app:layout_constraintTop_toBottomOf="@+id/button_delete_user" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
