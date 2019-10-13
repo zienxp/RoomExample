@@ -14,7 +14,7 @@ import androidx.fragment.app.Fragment;
  * A simple {@link Fragment} subclass.
  */
 public class HomeFragment extends Fragment implements View.OnClickListener {
-    private Button addUser, viewUser, deleteUser;
+    private Button addUser, readUser, deleteUser,updateUser;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -28,10 +28,12 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         addUser = view.findViewById(R.id.button_add_user);
         addUser.setOnClickListener(this);
-        viewUser = view.findViewById(R.id.button_view_users);
-        viewUser.setOnClickListener(this);
+        readUser = view.findViewById(R.id.button_view_users);
+        readUser.setOnClickListener(this);
         deleteUser = view.findViewById(R.id.button_delete_user);
         deleteUser.setOnClickListener(this);
+        updateUser = view.findViewById(R.id.button_update_user);
+        updateUser.setOnClickListener(this);
 
         return view;
     }
@@ -49,6 +51,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.button_delete_user:
                 MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container, new DeleteUserFragment()).addToBackStack(null).commit();
+                break;
+            case R.id.button_update_user:
+                MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container,new UpdateFragment()).addToBackStack(null).commit();
                 break;
         }
 
