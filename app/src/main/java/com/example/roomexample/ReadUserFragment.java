@@ -39,7 +39,7 @@ public class ReadUserFragment extends Fragment {
             String name = user.getName();
             String email = user.getEmail();
 
-            info = info +"\n ID: "+id+"\n Name: "+name+"\n E-mail: "+"\n--------------------------";
+            info = info +"\n ID: "+id+"\n Name: "+name+"\n E-mail: "+email+"\n--------------------------";
         }
 
         textInfo.setText(info);

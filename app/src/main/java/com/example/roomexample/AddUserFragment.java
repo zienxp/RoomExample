@@ -47,7 +47,7 @@ public class AddUserFragment extends Fragment {
                 user.setName(name);
                 user.setEmail(email);
 
-                MainActivity.myAppDatabase.myDao().adduser(user);
+                MainActivity.myAppDatabase.myDao().addUser(user);
 
                 Toast.makeText(getActivity(), "The User Added successfully", Toast.LENGTH_SHORT).show();
 
